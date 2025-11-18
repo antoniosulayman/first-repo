@@ -1,4 +1,2 @@
-s = "hello"
-
-for i in s:
-    print(i)
+s="hello in my big problem"
+print (s)
