@@ -1,3 +1,5 @@
-l = [10,20,30,40,50]
-for i in range(len(l)):
-    print(l[i])
+
+l=[1,2,3,4,5]
+
+for l in reversed(l):
+    print(l)
