@@ -1,6 +1,26 @@
-def my_reverse (l:list):
-   for i in range (len(l)//2):
-      l[i],l[-i-1] = l [-i-1],[i]
-1 = [1,2,3,4,5,6,7,8,]
-my_reverse(1)
-print(1)
+l = [1, 2, 3, 4, 5]   
+
+counts = {}
+for num in l:
+    if num in counts:
+        counts[num] += 1
+    else:
+        counts[num] = 1
+
+
+duplicates = []
+
+non_duplicates = []
+
+unique_numbers = []
+
+for num, count in counts.items():
+    if count > 1:
+        duplicates.append(num)
+    if count == 1:
+        non_duplicates.append(num)
+    unique_numbers.append(num)
+
+print ( duplicates)
+print ( unique_numbers)
+print ( non_duplicates)
