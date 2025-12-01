@@ -1,4 +1,4 @@
-from rarfile import RarFile, Error
+from rarfile import RarFile, BadRarFile
 
 passwords = ['1234', 'password', 'admin', '1111']
 
@@ -9,5 +9,5 @@ with RarFile('secrets.rar') as rf:
             rf.extractall()
             print('Found password!!!: ', pwd)
             break
-        except Error:
+        except BadRarFile:
             print("Invalid variant: ", pwd)
